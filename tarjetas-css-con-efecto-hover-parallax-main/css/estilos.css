@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #222020;
+    
+}
+
+.Mision1{
+    font-size: 100%;
+    width: 200px;
+    height: 200px;
+    background: #83277b;
+    margin: 20px;
+
+}
+
+.vision1{
+    font-size: 100%;
+    width: 200px;
+    height: 200px;
+    background: #0adbbf;
+    margin: 20px;
+    position: relative;
+    left: 500px;
+}
+
+
+
+h1{
+    color: rgb(122, 243, 0);
+    font-size: 20px;
+}
+
+
+ ul li{
+    display: inline-block;
+    padding: 0px 20px;
+ }
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover{
+    color: chartreuse;
+}
+body{
+    background: #1a1818;
+    z-index: -1;
+    
+}
+
+
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 800px;
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .description{
+    width: 300px;
+    height: 350px;
+}
+
+.card .cover img{
+    width: 250px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../images/pg4.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(../images/pg4.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(../images/pg4.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: rgb(61, 59, 59);
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    justify-content: space-between; /* Asegura que el botón esté al final */
+    
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card .description p{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+    
+}
+
+.card .description input{
+    margin-top: auto;
+    background: rgb(79, 156, 2);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+    
+    
+}
+
+.horario {
+    padding: 100px 0px;
+   
+
+}
+
+.horario-txt h4{
+    justify-content: center;
+
+}
+.horario-info h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.horario-txt {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+
+}
+.txt h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.txt p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 6400;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.card .description input:hover{
+    background: crimson;
+}
+
+.portadas {
+    display: flex;
+    justify-content: center;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;  
+
+}
+
+.portadas img {
+  margin: 0.2%;  
+  border: 2px solid crimson; /* Especifica el estilo del borde */
+  /*box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  /*position: relative; /* Para el uso de pseudo-elementos */
+}
+
+.video {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+    
+  
+   
+  
+
+
+
+.map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    border: 20px;
+    border-color: blue ;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+   
+   
+    
+}
+
+.footer  {
+    text-align: center;
+    background-color: #000000;
+    font-size: 15px;
+    position: relative;
+    bottom: 0;    
+}
+
+.footer h2 {
+    color: chartreuse;;
+}
+
+.footer h4 {
+    color: rgb(255, 255, 255);
+}
+
+.footer p {
+    color: rgb(253, 253, 253);
+    font-size: 12px;
+}
+
+.datoscontacto {
+    justify-content: center;
+    text-align: center;
+}
+.video2{
+    z-index: -1;
+    justify-content: center;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+    left: 48%;
+
+}
+.video3{
+    z-index: -1;
+    justify-content: center;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+
+}
+.video4{
+    z-index: -1;
+    justify-content: right;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+    left: 48%;
+
+}
