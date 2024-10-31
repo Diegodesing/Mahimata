@@ -58,7 +58,8 @@ a:hover{
     color: chartreuse;
 }
 body{
-    background: #1a1818;
+    
+    background: linear-gradient(to bottom,black 60%,rgb(82, 4, 21) );
     z-index: -1;
     
 }
@@ -72,6 +73,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     height: 800px;
+    
+    
 }
 
 .card{
@@ -125,15 +128,15 @@ body{
 }
 
 .card:nth-of-type(1) .img__back{
-    background-image: url(../images/pg4.jpg);
+    background-image: url(../img2/lama/tet.jpeg);
 }
 
 .card:nth-of-type(2) .img__back{
-    background-image: url(../images/pg4.jpg);
+    background-image: url(../img2/lama/tet.jpeg);
 }
 
 .card:nth-of-type(3) .img__back{
-    background-image: url(../images/pg4.jpg);
+    background-image: url(../img2/lama/tet.jpeg);
 }
 
 .card:hover .img__back{
@@ -141,7 +144,7 @@ body{
 }
 
 .card .description{
-    background: rgb(61, 59, 59);
+    
     margin-top: -10px;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
@@ -149,6 +152,7 @@ body{
     display: flex; /* Usar flexbox para alinear el contenido */
     flex-direction: column; /* Organiza el contenido verticalmente */
     justify-content: space-between; /* Asegura que el botón esté al final */
+    border: 2px solid crimson;
     
 }
 
@@ -159,12 +163,16 @@ body{
 .card .description h2{
     margin-top: 10px;
     text-align: center;
+    color: bisque;
 }
 
 .card .description p{
     margin-top: 10px;
     font-size: 12px;
     text-align: left;
+    color: bisque;
+    
+   
     
 }
 
@@ -221,7 +229,7 @@ body{
 }
 
 .card .description input:hover{
-    background: crimson;
+    background: rgb(1, 82, 19);
 }
 
 .portadas {
@@ -323,9 +331,70 @@ body{
 
 }
 
-body .fondo{
-    position: relative;
+.imf{
+    justify-content: center;
+    z-index: -1;
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    opacity: 50%;
+}
+.TITULO2{
+    font-size: 50PX;
+    color: antiquewhite;
+    font-family: fantasy;
+    text-align: center;
+}
+.pserv{
+    font-size: 20PX;
+    color: antiquewhite;
+    font-family: fantasy;
+    text-align: center;
+}
+.portadas2 {
+    display: flex;
+    justify-content: left;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;
+   
+}
+.infomahi{
+    margin: 0.2%;  
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.titulosomos{
+    font-size: 20PX;
+    color: antiquewhite;
+    font-family: unset;
+    text-align: center;
+    text-decoration: crimson;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+}
+.textosomos{
+    font-size: 20PX;
+    color: antiquewhite;
+    font-family: unset;
+    text-align: center;
+    
+
+}
+.contat{
+    display: flex;
+    justify-content: center;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;  
+}
+
+   
+
+.imgcontacto{
     width: 100%;
     height: 100%;
-    z-index: -1;
 }
+
