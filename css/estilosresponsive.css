@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%; /* Simplificación */
+    font-weight: bold;
+    background-color: #222020;
+}
+
+.Mision1,
+.vision1 {
+    font-size: 100%;
+    background: #83277b; /* Usar la misma clase para ambos con diferentes colores */
+    margin: 20px;
+    flex: 1; /* Permite que se ajusten */
+    min-width: 200px; /* Tamaño mínimo */
+    height: 200px;
+}
+
+.vision1 {
+    background: #0adbbf;
+}
+
+h1 {
+    color: rgb(122, 243, 0);
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+body {
+    background: linear-gradient(to bottom, black 60%, rgb(82, 4, 21));
+    z-index: -1;
+}
+
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0.2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40%;
+    
+    
+}
+
+.card{
+    width: 300px;
+    margin: 3%;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .description{
+    width: 300px;
+    height: 350px;
+}
+
+.card .cover img{
+    width: 250px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../img2/lama/tet.jpeg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(../img2/lama/tet.jpeg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(../img2/lama/tet.jpeg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    justify-content: space-between; /* Asegura que el botón esté al final */
+    border: 2px solid crimson;
+    
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+    text-align: center;
+    color: bisque;
+}
+
+.card .description p{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+    color: bisque;
+    
+   
+    
+}
+
+.card .description input{
+    margin-top: auto;
+    background: rgb(79, 156, 2);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+    
+    
+}
+
+.horario {
+    padding: 100px 0;
+}
+
+.horario-txt h4 {
+    justify-content: center;
+}
+
+.horario-info h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.horario-txt {
+    display: flex;
+    flex-direction: column; /* Alinear verticalmente */
+    align-items: center; /* Centrar */
+    text-align: center;
+}
+
+.txt h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.txt p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 6400;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.card .description input:hover {
+    background: rgb(1, 82, 19);
+}
+
+.portadas {
+    display: flex;
+    justify-content: center;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.portadas img {
+    margin: 0.2%;
+    border: 2px solid crimson;
+    width: 100%; /* Ajustar a 100% */
+    max-width: 200px; /* Ancho máximo */
+}
+
+.video {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.map {
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    border: 20px;
+    border-color: blue;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #000000;
+    font-size: 15px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer h2 {
+    color: chartreuse;
+}
+
+.footer h4 {
+    color: rgb(255, 255, 255);
+}
+
+.footer p {
+    color: rgb(253, 253, 253);
+    font-size: 12px;
+}
+
+.datoscontacto {
+    justify-content: center;
+    text-align: center;
+}
+
+.video2, .video3, .video4 {
+    z-index: -1;
+    justify-content: center;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+}
+
+.imf {
+    justify-content: center;
+    z-index: -1;
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    opacity: 50%;
+}
+
+.TITULO2 {
+    font-size: 50px; /* Cambiado a minúscula */
+    color: antiquewhite;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.pserv {
+    font-size: 20px; /* Cambiado a minúscula */
+    color: antiquewhite;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.portadas2 {
+    display: flex;
+    justify-content: left;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.infomahi {
+    margin: 0.2%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.titulosomos {
+    font-size: 20px; /* Cambiado a minúscula */
+    color: antiquewhite;
+    font-family: unset;
+    text-align: center;
+    text-decoration: crimson;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.textosomos {
+    font-size: 20px; /* Cambiado a minúscula */
+    color: antiquewhite;
+    font-family: unset;
+    text-align: center;
+}
+
+.contat {
+    display: flex;
+    justify-content: center;
+    transition: all 300ms;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Media Queries para mayor responsividad */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+    }
+    
+    .Mision1,
+    .vision1 {
+        flex: 1 1 100%; /* Se apilan en pantallas pequeñas */
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    nav {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    .horario-txt {
+        flex-direction: column; /* Alinear verticalmente */
+    }
+
+    .video2, .video3, .video4 {
+        width: 100%; /* Abarcar todo el ancho en móviles */
+        height: auto; /* Mantener proporciones */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px; /* Ajustar tamaño de fuente en móviles */
+    }
+
+    .card {
+        width: 100%; /* Una columna en pantallas más pequeñas */
+    }
+
+    .portadas img {
+        max-width: 100%; /* Imágenes adaptativas */
+    }
+
+    .TITULO2, .pserv, .titulosomos, .textosomos {
+        font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+}
