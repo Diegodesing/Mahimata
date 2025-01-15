@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configuración del correo
-    $to = "corporacionmahimata@gmail.com"; // Dirección de correo de destino
+    $to = "diegoag24@icloud.com"; // Dirección de correo de destino
     $subject = "Nuevo mensaje del formulario de contacto";
     $name = htmlspecialchars($_POST['name']);
     $phone = htmlspecialchars($_POST['phone']);
