@@ -9,20 +9,60 @@
 </head>
 <body>
 
-   <header>
-    <nav>
-        <h1>Corporación Mahimata</h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-   </header>
+    <header>
 
+        <header>
+            <nav class="navbar">
+                <h1>Corporación Mahimata</h1>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <script src="../scripts/hamburguer.js"></script>
 
      <!--seccion medio-->
+  
+        
      
+     <section class="contact-form">
+        <h2>Formulario de Contacto</h2>
+        <form action="sendEmail.php" method="POST">
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+            </div>
+            
+            <div class="input-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ingresa tu teléfono">
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+            </div>
+            
+            <div class="input-group">
+                <label for="suggestions">Sugerencias</label>
+                <textarea id="suggestions" name="suggestions" required placeholder="Escribe tus sugerencias o comentarios"></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Enviar</button>
+        
+        </form>
+        
+    </section>
+
     <!--seccion baja--> 
     <div class="datoscontacto">
         <h4>Dirección</h4>
@@ -34,19 +74,23 @@
         <p>3142491204</p>
         <p>3112522075</p>
     </div>
-
-     <!--seccion footer-->
-   <section>
+<section>
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63640.039801763734!2d-74.13657504476431!3d4.503028959387528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa3f96481dab7%3A0xa43270a0bc7ba2e0!2zVXNtZSwgQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1728435899944!5m2!1ses-419!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </section>
-   <footer class="footer container">
-    <h2>Corporación Mahimata</h2>
-    <div class="link"></div>
-    <h4>Social Media</h4>
-    <ul>
-        <li>facebook<a href="https://www.facebook.com/p/Corporaci%C3%B3n-Mahimata-100064808707965/?locale=es_LA"></a></li>
-    </ul>
-
+     <!--seccion footer-->
+     <footer class="footer container">
+        <h2>Corporación Mahimata</h2>
+        
+        <h4>¡síguenos!</h4>
+        <div class="link">
+            <a href="https://www.facebook.com/p/Corporaci%C3%B3n-Mahimata-100064808707965/?locale=es_LA" target="_blank">
+                <img src="../Mahimata/img2/social-media/facebook1.png" alt="facebook"></a>
+                <a href="http://www.youtube.com/@JuanCarlos-de2iv" target="_blank">
+                <img src="../Mahimata/img2/social-media/youtube.png" alt="youtube"></a>
+        <img src="../Mahimata/img2/social-media/x (2).png" alt="">
+        <img src="../Mahimata/img2/social-media/tiktok.png" alt="">
+        <img src="../Mahimata/img2/social-media/instagram.png" alt="">
+    </div>
 
 
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +6,63 @@
     font-family: 'Lato', sans-serif;
 }
 
-nav {
+.navbar {
+    position: fixed;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 5%; /* Simplificación */
-    font-weight: bold;
-    background-color: #222020;
+    align-items: center;
+    background-color: none;
+    padding: 4px 10px; 
+    color: white;
+    top: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
+
+.navbar h1 {
+    font-size: 15px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+   
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: crimson;
+}
+
+/* Estilos para el icono de hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+
+.hamburger span {
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+
 
 .Mision1,
 .vision1 {
@@ -29,8 +79,12 @@ nav {
 }
 
 h1 {
-    color: rgb(122, 243, 0);
-    font-size: 20px;
+    color: antiquewhite;
+    font-size: 12px;
+}
+h1:hover{
+    color: crimson;
+
 }
 
 ul li {
@@ -41,10 +95,11 @@ ul li {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 12px;
 }
 
 a:hover {
-    color: chartreuse;
+    color: crimson;
 }
 
 body {
@@ -54,24 +109,28 @@ body {
 
 .container__cards{
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 0.2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     height: 40%;
     
     
 }
 
+
 .card{
     width: 300px;
     margin: 3%;
     transition: all 300ms;
+    
+
 }
 
 .card:hover{
-    width: 350px;
+    width: 300px;
+    
 }
 
 .card .cover{
@@ -79,11 +138,13 @@ body {
     height: 250px;
     position: relative;
     overflow: hidden;
+   
 }
 
 .card .description{
     width: 300px;
     height: 350px;
+    
 }
 
 .card .cover img{
@@ -92,15 +153,43 @@ body {
     display: block;
     margin: auto;
     position: relative;
-    top: 40px;
+    top: 100%;
     z-index: 1;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
-    transition: all 400ms;
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+    left: 0;
+}
+
+.card .cover .foto1{
+    width: 250px;
+    height: 140%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 100%;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+    left: 0;
+}
+
+.card .cover .foto2{
+    width: 220px;
+    height: 180%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 100%;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+    left: 0;
 }
 
 .card:hover .cover img{
     top: 0px;
     filter: none;
+    
 }
 
 .card .img__back{
@@ -128,6 +217,7 @@ body {
 
 .card:hover .img__back{
     bottom: -40px;
+  
 }
 
 .card .description{
@@ -177,11 +267,15 @@ body {
 
 .horario {
     padding: 100px 0;
+    
 }
+
 
 .horario-txt h4 {
     justify-content: center;
+    
 }
+
 
 .horario-info h2 {
     font-size: 20px;
@@ -190,18 +284,23 @@ body {
     margin-bottom: 50px;
     justify-content: center;
     text-align: center;
+    
 }
+
 
 .horario-txt {
     display: flex;
     flex-direction: column; /* Alinear verticalmente */
     align-items: center; /* Centrar */
     text-align: center;
+   
 }
+
 
 .txt h4 {
     font-size: 18px;
     margin-bottom: 30px;
+    
 }
 
 .txt p {
@@ -228,7 +327,7 @@ body {
     margin: 0.2%;
     border: 2px solid crimson;
     width: 100%; /* Ajustar a 100% */
-    max-width: 200px; /* Ancho máximo */
+    max-width: 300px; /* Ancho máximo */
 }
 
 .video {
@@ -236,6 +335,7 @@ body {
     place-items: center;
     margin: auto;
     flex-wrap: wrap;
+   
 }
 
 .map {
@@ -259,7 +359,13 @@ body {
 }
 
 .footer h2 {
-    color: chartreuse;
+    color: antiquewhite;
+    font-size: 12px;
+}
+
+.footer h2:hover{
+    color: crimson;
+
 }
 
 .footer h4 {
@@ -274,6 +380,9 @@ body {
 .datoscontacto {
     justify-content: center;
     text-align: center;
+    color: antiquewhite;
+    font-size: 12px;
+
 }
 
 .video2, .video3, .video4 {
@@ -351,8 +460,10 @@ body {
 /* Media Queries para mayor responsividad */
 @media (max-width: 768px) {
     .card {
-        width: calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+        width: calc(50% - 0px); /* Dos columnas en pantallas más pequeñas */
+        
     }
+    
     
     .Mision1,
     .vision1 {
@@ -360,11 +471,31 @@ body {
         margin: 10px 0; /* Espaciado vertical */
     }
 
-    nav {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: flex-start; /* Alinear a la izquierda */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
 
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Mostrar el menú cuando esté activo */
+    .nav-links.active {
+        display: flex;
+    }
+
+    
     .horario-txt {
         flex-direction: column; /* Alinear verticalmente */
     }
@@ -373,15 +504,34 @@ body {
         width: 100%; /* Abarcar todo el ancho en móviles */
         height: auto; /* Mantener proporciones */
     }
+
+ 
+
+
 }
+
+
 
 @media (max-width: 480px) {
     h1 {
         font-size: 18px; /* Ajustar tamaño de fuente en móviles */
     }
 
+    .infomahi  {
+        font-size: 5px; /* Ajustar tamaño de fuente en móviles */
+        text-align: justify;
+    }
     .card {
         width: 100%; /* Una columna en pantallas más pequeñas */
+    }
+
+    .card .description h2 {
+        font-size: 18px; /* Ajustar tamaño de fuente en móviles */
+    }
+
+    .card .description p {
+        font-size: 14px; /* Ajustar tamaño de fuente en móviles */
+        text-align: justify;
     }
 
     .portadas img {
@@ -390,5 +540,117 @@ body {
 
     .TITULO2, .pserv, .titulosomos, .textosomos {
         font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+
+}
+
+.textotart {
+    font-size: 18px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* Estilo de la sección del formulario */
+.contact-form {
+    width: 90%;
+    max-width: 400px; /* Limita el ancho máximo del formulario */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño */
+    margin-top: 50px;  /* Añadir espacio entre la barra y el formulario */
+    margin: 80px auto;
+   
+    
+}
+
+
+/* Título del formulario */
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada grupo de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group textarea {
+    resize: vertical; /* Permite redimensionar el área de texto en altura */
+    height: 120px;
+}
+
+/* Estilo para el botón de envío */
+.submit-btn {
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+.footer .link img {
+    width: 20px; /* Tamaño de los íconos, puedes ajustar según tus necesidades */
+    height: auto;
+    margin: 0 5px; /* Espacio entre los íconos */
+    transition: transform 0.3s; /* Efecto de suavizado */
+}
+
+.footer .link img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .footer .link img {
+        width: 25px; /* Tamaño más pequeño para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .link img {
+        width: 20px; /* Tamaño aún más pequeño para pantallas pequeñas */
     }
 }

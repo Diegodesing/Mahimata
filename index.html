@@ -8,20 +8,31 @@
     <link rel="stylesheet" href="css/estilosresponsive.css">
 </head>
 <body>
+    
   
-   <header>
-    <nav>
-        <h1>Corporación Mahimata</h1>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-   </header>
+    <header>
+        <nav class="navbar">
+            <h1>Corporación Mahimata</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <script src="../scripts/hamburguer.js"></script>
+   
 
    <div class="video"> 
-        <video  width="100%" height="100%" autoplay muted playisinline loop ="video"> 
+        <video  width="100%" height="100%" autoplay muted  loop ="video"> 
             <source src="../Mahimata/img2/vt(1).mp4"type="video/mp4"  >
         </video>
     </div>
@@ -30,7 +41,7 @@
 
         <div class="card">
             <div class="cover">
-                <img src="../Mahimata/img2/3.png" alt="">
+                <img class="foto1" src="../Mahimata/img2/3.png" alt="">
                 <div class="img__back"></div>
             </div>
             <div class="description">
@@ -58,7 +69,7 @@
 
         <div class="card">
             <div class="cover">
-                <img src="../Mahimata/img2/2.png" alt="">
+                <img class="foto2" src="../Mahimata/img2/23ed.png" alt="">
                 <div class="img__back"></div>
             </div>
             <div class="description">
@@ -85,15 +96,17 @@
     <!--seccion baja--> 
 
      <!--seccion footer-->
-   
+    
    <footer class="footer container">
     <h2>Corporación Mahimata</h2>
-    
+   
     <h4>¡síguenos!</h4>
     <div class="link">
-    <img src="../Mahimata/img2/social-media/facebook1.png" alt="">
-    <img src="../Mahimata/img2/social-media/youtube.png" alt="">
-    <img src="../Mahimata/img2/social-media/x.png" alt="">
+        <a href="https://www.facebook.com/p/Corporaci%C3%B3n-Mahimata-100064808707965/?locale=es_LA" target="_blank">
+    <img src="../Mahimata/img2/social-media/facebook1.png" alt="facebook"></a>
+    <a href="" target="_blank">
+    <img src="../Mahimata/img2/social-media/youtube.png" alt="youtube"></a>
+    <img src="../Mahimata/img2/social-media/x (2).png" alt="">
     <img src="../Mahimata/img2/social-media/tiktok.png" alt="">
     <img src="../Mahimata/img2/social-media/instagram.png" alt="">
     
@@ -101,5 +114,7 @@
    
     
    </footer>
+
 </body>
+
 </html>
